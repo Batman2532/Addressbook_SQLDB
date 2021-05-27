@@ -145,3 +145,17 @@ mysql> select * from addressbook where city = 'nagpur' order by first_name asc;
 
 ---------------------------------------------------------------------------------------------------------------------
 
+UC9: Identify each addressbook by name and type
+
+mysql> alter table addressbook add name varchar(15);
+Query OK, 0 rows affected (0.55 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table addressbook add type varchar(15);
+Query OK, 0 rows affected (0.56 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> update addressbook set type = 'Self' where lastname = 'saurabh';
+
+----------------------------------------------------------------------------------------------------------------------
+
