@@ -58,3 +58,23 @@ mysql> describe addressbook;
 8 rows in set (0.00 sec)
 
 -------------------------------------------------------------------------------------------------------
+
+UC3: insert valures in table
+
+mysql> insert into addressbook (first_name,last_name,address,city,state,zip,phone_number,email) values ('saurabh','charjan','mb town','nagpur','maharashtra',440030,9988774,'charjan44@gmail.com'), ('john','wick','kothrud','pune','maharashtra',411041,6655447,'johnWick@yshoo.in'), ('bruce','Wayne','sadar','nggpur','maharashtra',440009,4455663,'batman@gotham.in');
+Query OK, 3 rows affected (0.22 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> select * from addressbook;
++------------+-----------+---------+--------+-------------+--------+--------------+---------------------+
+| first_name | last_name | address | city   | state       | zip    | phone_number | email               |
++------------+-----------+---------+--------+-------------+--------+--------------+---------------------+
+| saurabh    | charjan   | mb town | nagpur | maharashtra | 440030 |      9988774 | charjan44@gmail.com |
+| john       | wick      | kothrud | pune   | maharashtra | 411041 |      6655447 | johnWick@yshoo.in   |
+| bruce      | Wayne     | sadar   | nggpur | maharashtra | 440009 |      4455663 | batman@gotham.in    |
++------------+-----------+---------+--------+-------------+--------+--------------+---------------------+
+3 rows in set (0.00 sec)
+
+---------------------------------------------------------------------------------------------------------------
+
+
